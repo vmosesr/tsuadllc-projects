@@ -23,12 +23,10 @@
 
 
 *{
-    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     text-decoration: none;
     list-style: none;
     font-style: normal;
-    font-size: 15px;
 }
 
 body{
@@ -36,6 +34,7 @@ body{
     margin: 0;
     padding: 0;
     line-height: auto;
+    overflow-x: hidden;
 }
 
 .top-nav {
@@ -114,6 +113,170 @@ body{
     padding: 20px;
 }
 
+/* hero section ..................................................*/
+/* hero section ..................................................*/
+/* hero section ..................................................*/
+/* hero section ..................................................*/
+/* hero section ..................................................*/
+/* hero section ..................................................*/
+
+.hero-section {
+    background-color: #fff9f0;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-blob {
+    position: absolute;
+    right: -7%;
+    top: 0;
+    height: 100%;
+    width: 45%;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    left: -2%;
+    z-index: 2;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    border-bottom: 3px solid #ffaa5a;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.cta-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.breadcrumb-item a {
+    color: #666;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #999;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    color: #666;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    border-bottom: 3px solid #ffcc99;
+    color: #333;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 3px solid #ffaa5a;
+    color: #333;
+    background-color: transparent;
+}
+
+.tab-content {
+    padding: 20px 10px;
+}
+
+.solution-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.solution-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ffeedb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.solution-icon i {
+    color: #ff8c29;
+    font-size: 24px;
+}
+
+.scenario-item {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.scenario-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffaa5a;
+    margin-right: 20px;
+    min-width: 40px;
+}
+
+.blueprint-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 4px solid #ffaa5a;
+}
+
+
+
 /* Media queries for responsive design */
 @media (max-width: 991px) {
     .desktop-nav {
@@ -176,5 +339,25 @@ body{
     
     .search-container-mobile {
         margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-text {
+        font-size: 1rem;
+    }
+    
+    .hero-blob {
+        opacity: 0.4;
+        width: 80%;
+    }
+    
+    .nav-tabs .nav-link {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
     }
 }
