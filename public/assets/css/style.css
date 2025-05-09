@@ -398,6 +398,11 @@ body{
 }
 
 /* get started section............................................... */
+/* get started section............................................... */
+/* get started section............................................... */
+/* get started section............................................... */
+/* get started section............................................... */
+/* get started section............................................... */
 
 .get-started {
     padding: 2rem;
@@ -569,7 +574,7 @@ body{
 
 
 /* Media queries for responsive design */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     #mobileSubNav, #mobileTopNav {
         display: none; /* Hidden by default */
     }
