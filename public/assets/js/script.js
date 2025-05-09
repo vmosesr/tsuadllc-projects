@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuBtn = document.getElementById('menuBtn');
     const mobileSubNav = document.getElementById('mobileSubNav');
     const mobileTopNav = document.getElementById('mobileTopNav');
+
+    const serviceDetails = document.querySelectorAll('.service-detail');
     
     // Hamburger button toggle (for sub navigation)
     hamburgerBtn.addEventListener('click', function() {
@@ -38,5 +40,23 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileTopNav.classList.contains('show')) {
             mobileTopNav.classList.remove('show');
         }
+    });
+
+
+    // Animate items when page loads
+    setTimeout(() => {
+        serviceDetails.forEach(item => {
+            item.style.opacity = 1;
+            item.style.transform = 'translateY(0)';
+        });
+    }, 500);
+    
+    // Add hover animation to the button
+    const actionBtn = document.querySelector('.action-btn');
+    actionBtn.addEventListener('mouseenter', function() {
+        this.classList.add('animate__pulse');
+    });
+    actionBtn.addEventListener('mouseleave', function() {
+        this.classList.remove('animate__pulse');
     });
 });
