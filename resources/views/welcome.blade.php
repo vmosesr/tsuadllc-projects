@@ -11,8 +11,12 @@
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        {{-- <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" /> --}}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -35,16 +39,16 @@
                                 <div class="logo-icon">
                                     <i class="fas fa-building"></i>
                                 </div>
-                                <div class="logo-text">YourBrand</div>
+                                <div class="logo-text">ETHICS FRAMEWORK</div>
                             </div>
                             
                             <!-- Center Menu Links -->
                             <div class="col-md-6">
                                 <div class="center-menu">
-                                    <a href="#" class="nav-link">Home</a>
-                                    <a href="#" class="nav-link">About</a>
-                                    <a href="#" class="nav-link">Services</a>
-                                    <a href="#" class="nav-link">Contact</a>
+                                    <a href="#" class="nav-link">TSUAD LLC</a>
+                                    <a href="#" class="nav-link">WHO WE ARE</a>
+                                    <a href="#" class="nav-link">COMPANIES</a>
+                                    <a href="#" class="nav-link">CONTACT</a>
                                 </div>
                             </div>
                             
@@ -420,16 +424,190 @@
                 </div>
             </div>
 
-            <!-- Hero Section Placeholder -->
-            <div class="container mt-4">
-                <div class="p-5 bg-light rounded-3">
-                    <h1>Hero Section Placeholder</h1>
-                    <p>This is where your hero section content would go.</p>
-                </div>
-            </div>
-
-
         </header>
+
+
+        <main class="">
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container hero-content">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Cloud</a></li>
+                            <li class="breadcrumb-item"><a href="#">Artificial Intelligence</a></li>
+                        </ol>
+                    </nav>
+                    
+                    <h1 class="hero-title">AI Solutions Hub</h1>
+                    <p class="hero-text">Enter a new era of productivity with generative AI solutions for your business. Leverage AI, embedded as you need it, across the full stack.</p>
+                    <button class="cta-button">Speak to an AI expert</button>
+                </div>
+                
+                <div class="hero-blob">
+                    <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#FFAA5A" d="M42.7,-72.1C54.9,-64.3,64.3,-51.3,69.4,-37.4C74.5,-23.5,75.3,-8.8,73.2,5.7C71.2,20.1,66.3,34.3,57.4,46C48.5,57.7,35.6,66.9,21.2,72.1C6.9,77.3,-8.9,78.6,-24.5,75.3C-40.2,72,-55.7,64,-65.3,51.6C-74.9,39.3,-78.6,22.4,-77.4,6.4C-76.3,-9.6,-70.3,-24.8,-61.2,-37.5C-52.2,-50.2,-40,-60.5,-26.8,-67.7C-13.6,-74.9,0.5,-79.1,14.5,-77.5C28.5,-75.9,42.5,-68.5,51.8,-58.4C61.1,-48.3,65.8,-35.6,72.1,-22.3C78.4,-9,86.3,4.7,84.4,17.1C82.5,29.4,71,40.3,58.1,47.2C45.3,54.1,31.2,57,17,64.5C2.9,72,-11.3,84.2,-25.1,84.7C-38.9,85.2,-52.4,74,-62.6,60.6C-72.9,47.2,-80,31.6,-81.9,15.2C-83.9,-1.1,-80.8,-18.2,-73.1,-32.3C-65.5,-46.3,-53.2,-57.3,-39.6,-64.9C-26,-72.5,-11,-76.7,2.5,-80.6C16,-84.5,30.5,-88,42.7,-72.1Z" transform="translate(100 50)" />
+                    </svg>
+                </div>
+            </section>
+            
+            <!-- Tab Navigation -->
+            <section class="tab-section">
+                <div class="tab-section-links">
+                    <ul class="nav nav-tabs" id="solutionTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="all-solutions-tab" data-bs-toggle="tab" data-bs-target="#all-solutions" type="button" role="tab" aria-controls="all-solutions" aria-selected="true">All solutions</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="typical-scenarios-tab" data-bs-toggle="tab" data-bs-target="#typical-scenarios" type="button" role="tab" aria-controls="typical-scenarios" aria-selected="false">Typical scenarios</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="oci-blueprints-tab" data-bs-toggle="tab" data-bs-target="#oci-blueprints" type="button" role="tab" aria-controls="oci-blueprints" aria-selected="false">OCI AI Blueprints</button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="solutionTabsContent">
+                        <!-- All Solutions Tab -->
+                        <div class="tab-pane fade show active" id="all-solutions" role="tabpanel" aria-labelledby="all-solutions-tab">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="solution-card">
+                                        <div class="solution-icon">
+                                            <i class="bi bi-robot"></i>
+                                        </div>
+                                        <h3>Generative AI</h3>
+                                        <p>Transform your business with text, image, and code generation models.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="solution-card">
+                                        <div class="solution-icon">
+                                            <i class="bi bi-chat-dots"></i>
+                                        </div>
+                                        <h3>Conversational AI</h3>
+                                        <p>Build intelligent chatbots and virtual assistants for customer support.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="solution-card">
+                                        <div class="solution-icon">
+                                            <i class="bi bi-bar-chart"></i>
+                                        </div>
+                                        <h3>Predictive Analytics</h3>
+                                        <p>Forecast trends and make data-driven decisions with AI-powered analytics.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="solution-card">
+                                        <div class="solution-icon">
+                                            <i class="bi bi-image"></i>
+                                        </div>
+                                        <h3>Computer Vision</h3>
+                                        <p>Analyze and interpret visual data from images and video streams.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="solution-card">
+                                        <div class="solution-icon">
+                                            <i class="bi bi-mic"></i>
+                                        </div>
+                                        <h3>Speech Recognition</h3>
+                                        <p>Convert spoken language into text with advanced AI models.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="solution-card">
+                                        <div class="solution-icon">
+                                            <i class="bi bi-shield-check"></i>
+                                        </div>
+                                        <h3>AI Security</h3>
+                                        <p>Enhance security with AI-powered threat detection and prevention.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Typical Scenarios Tab -->
+                        <div class="tab-pane fade" id="typical-scenarios" role="tabpanel" aria-labelledby="typical-scenarios-tab">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="scenario-item">
+                                        <div class="scenario-number">01</div>
+                                        <div>
+                                            <h3>Customer Service Automation</h3>
+                                            <p>Implement AI chatbots to handle routine customer inquiries, freeing up human agents to tackle more complex issues.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="scenario-item">
+                                        <div class="scenario-number">02</div>
+                                        <div>
+                                            <h3>Content Creation at Scale</h3>
+                                            <p>Generate marketing copy, blog posts, and social media content using generative AI models trained on your brand voice.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="scenario-item">
+                                        <div class="scenario-number">03</div>
+                                        <div>
+                                            <h3>Supply Chain Optimization</h3>
+                                            <p>Predict inventory needs, optimize logistics, and reduce costs with AI-powered forecasting algorithms.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="scenario-item">
+                                        <div class="scenario-number">04</div>
+                                        <div>
+                                            <h3>Personalized Recommendations</h3>
+                                            <p>Increase customer engagement with AI-driven product and content recommendations based on behavior analysis.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- OCI AI Blueprints Tab -->
+                        <div class="tab-pane fade" id="oci-blueprints" role="tabpanel" aria-labelledby="oci-blueprints-tab">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="blueprint-card">
+                                        <h3>Document Processing Pipeline</h3>
+                                        <p>Extract, classify, and process information from unstructured documents with this complete AI solution.</p>
+                                        <a href="#" class="btn btn-outline-secondary mt-2">View Blueprint</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="blueprint-card">
+                                        <h3>Intelligent Customer Support</h3>
+                                        <p>Deploy a fully integrated customer support system with chatbots, sentiment analysis, and case routing.</p>
+                                        <a href="#" class="btn btn-outline-secondary mt-2">View Blueprint</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="blueprint-card">
+                                        <h3>Real-time Anomaly Detection</h3>
+                                        <p>Identify unusual patterns in data streams for fraud prevention, equipment monitoring, and more.</p>
+                                        <a href="#" class="btn btn-outline-secondary mt-2">View Blueprint</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="blueprint-card">
+                                        <h3>Multimodal Content Analysis</h3>
+                                        <p>Process text, images, and video content simultaneously for comprehensive media understanding.</p>
+                                        <a href="#" class="btn btn-outline-secondary mt-2">View Blueprint</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
 
 
 
@@ -437,7 +615,6 @@
         <script src="{{ asset('assets/js/script.js') }}"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-        
 
     </body>
 
