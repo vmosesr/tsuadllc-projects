@@ -46,9 +46,9 @@
                             <!-- Center Menu Links -->
                             <div class="col-md-6">
                                 <div class="center-menu">
-                                    <a href="#" class="nav-link">WHO WE ARE</a>
-                                    <a href="#" class="nav-link">COMPANIES</a>
-                                    <a href="#" class="nav-link">CONTACT</a>
+                                    <a href="{{ route('who-we-are') }}" class="nav-link">WHO WE ARE</a>
+                                    <a href="{{ route('companies') }}" class="nav-link">COMPANIES</a>
+                                    <a href="{{ route('contact-us') }}" class="nav-link">CONTACT</a>
                                 </div>
                             </div>
                             
@@ -59,8 +59,8 @@
                                         <input type="text" class="form-control" placeholder="Search...">
                                         <i class="fas fa-search search-icon"></i>
                                     </div>
-                                    <a href="#" class="btn btn-outline-primary btn-sm me-2">Login</a>
-                                    <a href="#" class="btn btn-primary btn-sm">Register</a>
+                                    <a href="{{ route('login') }}" class="btn btn-outline-primary btn-sm me-2">Login</a>
+                                    <a href="{{ route('register') }}" class="btn btn-primary btn-sm">Register</a>
                                 </div>
                             </div>
                         </div>
@@ -594,10 +594,10 @@
             <!-- Mobile Top Navigation Menu (slides from right) -->
             <div class="top-mobile-menu" id="mobileTopNav">
                 <div class="mobile-menu-links mb-4">
-                    <a href="#" class="nav-link d-block py-2">TSUAD LLC</a>
-                    <a href="#" class="nav-link d-block py-2">WHO WE ARE</a>
-                    <a href="#" class="nav-link d-block py-2">COMPANIES</a>
-                    <a href="#" class="nav-link d-block py-2">CONTACT</a>
+                    {{-- <a href="{{ route('#') }}" class="nav-link d-block py-2">TSUAD LLC</a> --}}
+                    <a href="{{ route('who-we-are') }}" class="nav-link d-block py-2">WHO WE ARE</a>
+                    <a href="{{ route('companies') }}" class="nav-link d-block py-2">COMPANIES</a>
+                    <a href="{{ route('contact-us') }}" class="nav-link d-block py-2">CONTACT</a>
                 </div>
                 
                 <div class="search-login-container-mobile">
@@ -611,8 +611,8 @@
                     </div>
                     
                     <div class="d-grid gap-2">
-                        <a href="#" class="btn btn-outline-primary">Login</a>
-                        <a href="#" class="btn btn-primary">Register</a>
+                        <a href="{{ route('login') }}" class="btn btn-outline-primary">Login</a>
+                        <a href="{{ route('register') }}" class="btn btn-primary">Register</a>
                     </div>
                 </div>
             </div>
