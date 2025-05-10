@@ -78,7 +78,7 @@
                                         Ethical Pillars
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-large" aria-labelledby="category1">
-                                        <div class="row">
+                                        <div class="row dropdowns-menu-content">
                                             <div class="col-md-4">
                                                 <h6>Fairness & Equity</h6>
                                                 <a class="dropdown-item" href="#">Bias Mitigation</a>
@@ -114,7 +114,7 @@
                                         Implementation
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-large" aria-labelledby="category2">
-                                        <div class="row">
+                                        <div class="row dropdowns-menu-content">
                                             <div class="col-md-6">
                                                 <h6>Assessment Tools</h6>
                                                 <a class="dropdown-item" href="#">Self-Assessment Questionnaire</a>
@@ -157,7 +157,7 @@
                                         Sector-Specific
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-large" aria-labelledby="category3">
-                                        <div class="row">
+                                        <div class="row dropdowns-menu-content">
                                             <div class="col-md-12">
                                                 <h6>Healthcare</h6>
                                                 <a class="dropdown-item" href="#">Patient Data Ethics</a>
@@ -210,7 +210,7 @@
                                         Research | Publications
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-large" aria-labelledby="category4">
-                                        <div class="row">
+                                        <div class="row dropdowns-menu-content">
                                             <div class="col-md-4">
                                                 <h6>Academic Papers</h6>
                                                 <a class="dropdown-item" href="#">Technical Reports</a>
@@ -242,7 +242,7 @@
                                         Learning Center
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-large" aria-labelledby="category6">
-                                        <div class="row">
+                                        <div class="row dropdowns-menu-content">
                                             <div class="col-md-6">
                                                 <h6>Courses</h6>
                                                 <a class="dropdown-item" href="#">Introduction to AI Ethics</a>
@@ -267,7 +267,7 @@
                                         Community
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-large" aria-labelledby="category7">
-                                        <div class="row">
+                                        <div class="row dropdowns-menu-content">
                                             <div class="col-md-12">
                                                 <h6>Forum</h6>
                                                 <a class="dropdown-item" href="#">General Discussion</a>
