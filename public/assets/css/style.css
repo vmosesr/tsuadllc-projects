@@ -99,6 +99,11 @@ body{
     padding: 10px 0;
 }
 
+.dropdowns-menu-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .mobile-nav-toggles {
     display: none;
 }
