@@ -102,11 +102,21 @@
 
         </main>
 
+        <script>
+            // Initialize AOS
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+        </script>
+
 
 
         <!-- Bootstrap JS & Popper.js -->
         <script src="{{ asset('assets/js/script.js') }}"></script>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
     </body>
