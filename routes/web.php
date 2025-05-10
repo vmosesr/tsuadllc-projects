@@ -1,11 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
+
+// top-navigation routes
+
+Route::get('/who-we-are', [PageController::class, 'whoWeAre'])->name('who-we-are');
+Route::get('/companies', [PageController::class, 'companies'])->name('companies');
+Route::get('/services', [PageController::class, 'services'])->name('services');
+Route::get('/contact-us', [PageController::class, 'contactUs'])->name('contact-us');
+
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
