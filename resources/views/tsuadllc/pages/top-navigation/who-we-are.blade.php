@@ -42,7 +42,7 @@
                 
                 <div class="row mt-5">
                     <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-                        <img src="/api/placeholder/600/400" alt="Team collaboration" class="img-fluid rounded-3 shadow">
+                        <img src="{{ asset('assets/images/annie-spratt-sggw4-qDD54-unsplash.jpg') }}" alt="Team collaboration" class="img-fluid rounded-3 shadow">
                     </div>
                     <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
                         <div class="ps-md-4 mt-4 mt-md-0">
@@ -402,58 +402,69 @@
                 
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="team-card shadow-sm position-relative">
-                            <img src="/api/placeholder/300/300" alt="Team Member" class="img-fluid">
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                        <div class="team-card shadow-sm">
+                            <div class="team-image-container">
+                                <img src="{{ asset('assets/images/fatane-rahimi-jyUgPZ-JXE8-unsplash.jpg') }}" alt="Prof. Michael Okonjo" class="img-fluid">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
                             </div>
-                            <div class="p-3 bg-white">
+                            <div class="team-info">
                                 <h5 class="mb-1">Dr. Sarah Chen</h5>
                                 <p class="text-primary-custom mb-2">Executive Director</p>
-                                <p class="small mb-0">Former AI Policy Advisor with 15+ years in ethical technology development.</p>
+                                <p class="team-bio small mb-0">Former AI Policy Advisor with 15+ years in ethical technology development.</p>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="team-card shadow-sm position-relative">
-                            <img src="/api/placeholder/300/300" alt="Team Member" class="img-fluid">
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                        <div class="team-card shadow-sm">
+                            <div class="team-image-container">
+                                <img src="{{ asset('assets/images/wellington-ferreira-72TE8cWKXRY-unsplash.jpg') }}" alt="Dr. Sarah Chen" class="img-fluid">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
                             </div>
-                            <div class="p-3 bg-white">
+                            <div class="team-info">
                                 <h5 class="mb-1">Prof. Michael Okonjo</h5>
                                 <p class="text-primary-custom mb-2">Research Director</p>
-                                <p class="small mb-0">Leading computer scientist specializing in explainable AI and algorithmic fairness.</p>
+                                <p class="team-bio small mb-0">Leading computer scientist specializing in explainable AI and algorithmic fairness.</p>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="team-card shadow-sm position-relative">
-                            <img src="/api/placeholder/300/300" alt="Team Member" class="img-fluid">
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                        <div class="team-card shadow-sm">
+                            <div class="team-image-container">
+                                <img src="{{ asset('assets/images/bishesh-shrestha-2b7QWN-XG_o-unsplash.jpg') }}" alt="Dr. Amina Patel" class="img-fluid">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
                             </div>
-                            <div class="p-3 bg-white">
+                            <div class="team-info">
                                 <h5 class="mb-1">Dr. Amina Patel</h5>
                                 <p class="text-primary-custom mb-2">Policy Lead</p>
-                                <p class="small mb-0">Expert in international technology policy and regulatory frameworks.</p>
+                                <p class="team-bio small mb-0">Expert in international technology policy and regulatory frameworks.</p>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="team-card shadow-sm position-relative">
-                            <img src="/api/placeholder/300/300" alt="Team Member" class="img-fluid">
-                            <div class="team-social">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                        <div class="team-card shadow-sm">
+                            <div class="team-image-container">
+                                <img src="{{ asset('assets/images/matthew-osborn-eTTj0ElZETs-unsplash.jpg') }}" alt="Thomas Andersson" class="img-fluid">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
                             </div>
-                            <div class="p-3 bg-white">
+                            <div class="team-info">
                                 <h5 class="mb-1">Thomas Andersson</h5>
                                 <p class="text-primary-custom mb-2">Industry Liaison</p>
-                                <p class="small mb-0">Bridges academia and industry to ensure practical implementation of ethical AI.</p>
+                                <p class="team-bio small mb-0">Bridges academia and industry to ensure practical implementation of ethical AI.</p>
                             </div>
                         </div>
                     </div>
@@ -477,6 +488,7 @@
                 </div>
                 
                 <div class="timeline">
+                    <!-- 2020 -->
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content timeline-left" data-aos="fade-right">
@@ -488,6 +500,7 @@
                         </div>
                     </div>
                     
+                    <!-- 2021 -->
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content timeline-right" data-aos="fade-left">
@@ -499,6 +512,7 @@
                         </div>
                     </div>
                     
+                    <!-- 2022 -->
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content timeline-left" data-aos="fade-right">
@@ -510,6 +524,7 @@
                         </div>
                     </div>
                     
+                    <!-- 2023 -->
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content timeline-right" data-aos="fade-left">
@@ -521,6 +536,7 @@
                         </div>
                     </div>
                     
+                    <!-- 2024 -->
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content timeline-left" data-aos="fade-right">
@@ -532,6 +548,7 @@
                         </div>
                     </div>
                     
+                    <!-- 2025 -->
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content timeline-right" data-aos="fade-left">
@@ -543,6 +560,7 @@
                         </div>
                     </div>
                     
+                    <!-- 2026 -->
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content timeline-left" data-aos="fade-right">
@@ -553,6 +571,9 @@
                             <p>Successfully integrated framework principles into international AI governance standards and regulations.</p>
                         </div>
                     </div>
+                    
+                    <!-- Visual completion for the timeline -->
+                    <div class="timeline-end"></div>
                 </div>
             </div>
         </section>
