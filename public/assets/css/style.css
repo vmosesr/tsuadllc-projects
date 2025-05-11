@@ -819,7 +819,7 @@ body{
 .timeline {
     position: relative;
     padding: 20px 0;
-    margin-bottom: 12rem;
+    margin-bottom: 5rem;
 }
 
 .timeline:before {
@@ -1222,6 +1222,7 @@ body{
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
     position: relative;
+    color: white;
 }
 
 ._companies.hero-title span {
@@ -1619,53 +1620,6 @@ body{
     bottom: 0;
     left: 50%;
     margin-left: -1px;
-}
-
-._companies.timeline-item {
-    padding: 10px 40px;
-    position: relative;
-    width: 50%;
-    box-sizing: border-box;
-}
-
-._companies.timeline-item::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: -10px;
-    background-color: var(--light);
-    border: 4px solid var(--primary);
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-._companies.timeline-item.left {
-    left: 0;
-    text-align: right;
-}
-
-._companies.timeline-item.right {
-    left: 50%;
-}
-
-._companies.timeline-item.right::after {
-    left: -10px;
-}
-
-._companies.timeline-content {
-    padding: 20px 30px;
-    background-color: var(--light);
-    position: relative;
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-}
-
-._companies.timeline-date {
-    font-weight: 600;
-    color: var(--primary);
-    margin-bottom: 10px;
 }
 
 /* Animation Classes */
