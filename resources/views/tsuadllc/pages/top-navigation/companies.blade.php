@@ -140,49 +140,82 @@
                         <p class="slide-up">Explore the key milestones in TSUAD LLC's history that have shaped our growth and innovation trajectory.</p>
                     </div>
                 </div>
-                <div class="_companies timeline-container">
-                    <div class="_companies timeline-item left fade-in">
-                        <div class="_companies timeline-content">
-                            <div class="_companies timeline-date">2019</div>
-                            <h4>Foundation of TSUAD LLC</h4>
+
+                <div class="timeline">
+                    <!-- 2015 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content timeline-left" data-aos="fade-right">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary-custom text-white px-3 py-1 rounded-pill me-3">2015</div>
+                                <h4 class="mb-0">Foundation of TSUAD LLC</h4>
+                            </div>
                             <p>Established with a vision to transform telecommunications and technology landscape.</p>
                         </div>
                     </div>
-                    <div class="_companies timeline-item right fade-in">
-                        <div class="_companies timeline-content">
-                            <div class="_companies timeline-date">2020</div>
-                            <h4>Launch of TSUAD ARMS</h4>
+                    
+                    <!-- 2021 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content timeline-right" data-aos="fade-left">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary-custom text-white px-3 py-1 rounded-pill me-3">2021</div>
+                                <h4 class="mb-0">Launch of TSUAD ARMS</h4>
+                            </div>
                             <p>Our first subsidiary focused on digital security and infrastructure solutions.</p>
                         </div>
                     </div>
-                    <div class="_companies timeline-item left fade-in">
-                        <div class="_companies timeline-content">
-                            <div class="_companies timeline-date">2021</div>
-                            <h4>COLTECI Begins Operations</h4>
+                    
+                    <!-- 2022 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content timeline-left" data-aos="fade-right">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary-custom text-white px-3 py-1 rounded-pill me-3">2022</div>
+                                <h4 class="mb-0">COLTECI Begins Operations</h4>
+                            </div>
                             <p>Establishment of our collaborative technology and innovation research center.</p>
                         </div>
                     </div>
-                    <div class="_companies timeline-item right fade-in">
-                        <div class="_companies timeline-content">
-                            <div class="_companies timeline-date">2022</div>
-                            <h4>DISTADEX Platform Launch</h4>
+                    
+                    <!-- 2023 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content timeline-right" data-aos="fade-left">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary-custom text-white px-3 py-1 rounded-pill me-3">2023</div>
+                                <h4 class="mb-0">DISTADEX Platform Launch</h4>
+                            </div>
                             <p>Introduction of our digital marketplace and data exchange platform.</p>
                         </div>
                     </div>
-                    <div class="_companies timeline-item left fade-in">
-                        <div class="_companies timeline-content">
-                            <div class="_companies timeline-date">2023</div>
-                            <h4>TAXON Digital Community</h4>
+                    
+                    <!-- 2024 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content timeline-left" data-aos="fade-right">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary-custom text-white px-3 py-1 rounded-pill me-3">2024</div>
+                                <h4 class="mb-0">TAXON Digital Community</h4>
+                            </div>
                             <p>Creation of our community empowerment and digital inclusion platform.</p>
                         </div>
                     </div>
-                    <div class="_companies timeline-item right fade-in">
-                        <div class="_companies timeline-content">
-                            <div class="_companies timeline-date">2024</div>
-                            <h4>Global Expansion</h4>
+                    
+                    <!-- 2025 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content timeline-right" data-aos="fade-left">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary-custom text-white px-3 py-1 rounded-pill me-3">2025</div>
+                                <h4 class="mb-0">Global Expansion</h4>
+                            </div>
                             <p>Projected financial outlook of USD 30 million as we expand our global footprint.</p>
                         </div>
                     </div>
+                    
+                    <!-- Visual completion for the timeline -->
+                    <div class="timeline-end"></div>
                 </div>
             </div>
         </section>
@@ -200,7 +233,7 @@
                     <div class="col-lg-4 col-md-6 mb-5">
                         <div class="_companies testimonial-card slide-up">
                             <div class="_companies testimonial-avatar">
-                                <img src="/api/placeholder/80/80" alt="placeholder">
+                                <img src="{{ asset('assets/images/fatane-rahimi-jyUgPZ-JXE8-unsplash.jpg') }}" alt="placeholder">
                             </div>
                             <p class="_companies testimonial-text">"TSUAD LLC's AI ethics framework has been instrumental in helping us develop responsible and transparent AI solutions for our healthcare systems."</p>
                             <div class="_companies testimonial-author">
@@ -212,7 +245,7 @@
                     <div class="col-lg-4 col-md-6 mb-5">
                         <div class="_companies testimonial-card slide-up">
                             <div class="_companies testimonial-avatar">
-                                <img src="/api/placeholder/80/80" alt="placeholder">
+                                <img src="{{ asset('assets/images/wellington-ferreira-72TE8cWKXRY-unsplash.jpg') }}" alt="placeholder">
                             </div>
                             <p class="_companies testimonial-text">"Working with COLTECI has accelerated our R&D efforts by at least 18 months. Their collaborative approach to technology innovation is unmatched in the industry."</p>
                             <div class="_companies testimonial-author">
@@ -224,7 +257,7 @@
                     <div class="col-lg-4 col-md-6 mb-5 mx-auto">
                         <div class="_companies testimonial-card slide-up">
                             <div class="_companies testimonial-avatar">
-                                <img src="/api/placeholder/80/80" alt="placeholder">
+                                <img src="{{ asset('assets/images/bishesh-shrestha-2b7QWN-XG_o-unsplash.jpg') }}" alt="placeholder">
                             </div>
                             <p class="_companies testimonial-text">"DISTADEX has revolutionized how we approach logistics and supply chain management. The data analytics capabilities have resulted in a 30% efficiency improvement."</p>
                             <div class="_companies testimonial-author">
