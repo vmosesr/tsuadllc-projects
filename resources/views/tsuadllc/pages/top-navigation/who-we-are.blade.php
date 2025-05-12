@@ -10,8 +10,8 @@
                         <h1 class="who-we-are-hero-title">AI Ethics and Responsible Innovation Framework</h1>
                         <p class="mt-4 mb-4 lead">Pioneering ethical standards for artificial intelligence development and deployment in collaboration with TSUAD Support in ICT.</p>
                         <div class="d-flex flex-wrap mt-5">
-                            <button class="btn btn-lg px-4 py-3 me-3 mb-3 bg-primary-custom text-white">Learn More</button>
-                            <button class="btn btn-lg px-4 py-3 mb-3 btn-outline-light">Join Our Initiative</button>
+                            <button class="btn btn-lg px-4 py-3 me-3 mb-3 bg-primary-custom text-white"><a href="{{ route('learn-more') }}" class="" style="text-decoration: none; color: white;">Learn More</a></button>
+                            <button class="who-we-are btn btn-lg px-4 py-3 mb-3 btn-outline-light"><a href="{{ route('joining-initiative') }}" class="" style="text-decoration: none; color: rgb(61, 56, 56);">Join Our Initiative</a></button>
                         </div>
                     </div>
                     <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1000">
