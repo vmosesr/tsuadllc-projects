@@ -59,4 +59,53 @@ document.addEventListener('DOMContentLoaded', function() {
     actionBtn.addEventListener('mouseleave', function() {
         this.classList.remove('animate__pulse');
     });
+
+
+
+    // Joining form
+
+    let currentStep = 0;
+    const steps = document.querySelectorAll(".step");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    function showStep(n) {
+        steps.forEach((step, i) => {
+        step.classList.toggle("active", i === n);
+        });
+        prevBtn.style.display = n === 0 ? "none" : "inline-block";
+        nextBtn.innerText = n === steps.length - 1 ? "Submit" : "Next";
+    }
+
+    function nextPrev(n) {
+        if (n === 1 && currentStep === steps.length - 1) {
+        document.getElementById("joinForm").submit();
+        return;
+        }
+        currentStep += n;
+        if (currentStep >= steps.length) currentStep = steps.length - 1;
+        if (currentStep < 0) currentStep = 0;
+        showStep(currentStep);
+    }
+
+    showStep(currentStep);
+
+    // Toggle org vs individual fields
+    const orgRadio = document.getElementById("organization");
+    const indRadio = document.getElementById("individual");
+    const orgFields = document.getElementById("orgFields");
+    const indFields = document.getElementById("individualFields");
+
+    document.querySelectorAll("input[name='type']").forEach((radio) => {
+        radio.addEventListener("change", () => {
+            if (orgRadio.checked) {
+                orgFields.style.display = "block";
+                indFields.style.display = "none";
+            } else {
+                orgFields.style.display = "none";
+                indFields.style.display = "block";
+            }
+        });
+    });
+    
 });
