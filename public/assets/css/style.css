@@ -310,6 +310,9 @@ body{
 
 /* HERO WHO WE ARE ::::::::::::::::::::::::::::::::::::::::::::: */
 /* HERO WHO WE ARE ::::::::::::::::::::::::::::::::::::::::::::: */
+/* HERO WHO WE ARE ::::::::::::::::::::::::::::::::::::::::::::: */
+/* HERO WHO WE ARE ::::::::::::::::::::::::::::::::::::::::::::: */
+/* HERO WHO WE ARE ::::::::::::::::::::::::::::::::::::::::::::: */
 
 .who-we-are-hero {
     background: linear-gradient(rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url('/api/placeholder/1920/1080') center center/cover no-repeat;
@@ -351,6 +354,10 @@ body{
     background-color: rgba(255, 170, 90, 0.3);
     z-index: 1;
     animation: pulse 8s infinite alternate;
+}
+
+.who-we-are.btn:hover{
+    color: black;
 }
 
 /* actions ..................................................... */
@@ -1793,4 +1800,173 @@ a {
 ._companies.btn:hover::after {
     transform-origin: bottom left;
     transform: scaleX(1);
+}
+
+
+/* learn more page :::::::::::::::::::::::::::::::::::::::::::::::: */
+/* learn more page :::::::::::::::::::::::::::::::::::::::::::::::: */
+/* learn more page :::::::::::::::::::::::::::::::::::::::::::::::: */
+/* learn more page :::::::::::::::::::::::::::::::::::::::::::::::: */
+/* learn more page :::::::::::::::::::::::::::::::::::::::::::::::: */
+/* learn more page :::::::::::::::::::::::::::::::::::::::::::::::: */
+/* learn more page :::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+.learn-more.hero-section {
+  background-color: #333;
+  min-height: 90vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.learn-more.hero-section .highlight {
+  color: #ffaa5a;
+  /* font-weight: bold; */
+}
+
+.learn-more.section {
+  position: relative;
+  overflow: hidden;
+  background-color: #313131;
+  z-index: 1;
+}
+
+.learn-more.svg-bg-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none; /* Make background unclickable */
+}
+
+.learn-more.animated-bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.learn-more.section .container {
+  position: relative;
+  z-index: 2; /* Ensure content sits above SVG */
+}
+
+.learn-more.section h3,
+.learn-more.section p,
+.learn-more.section ul {
+  z-index: 2;
+}
+
+.section ul li {
+  color: white;
+  font-size: 1.05rem;
+}
+
+
+.learn-more.section {
+    padding: 4rem 2rem;
+    animation: fadeInUp 1s ease;
+}
+
+.learn-more.icon-box {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 16px;
+    background: #fdfdfd;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.learn-more.icon-box:hover {
+    transform: translateY(-10px);
+}
+
+.learn-more.icon-box i {
+    font-size: 2rem;
+    color: #ffaa5a;
+    margin-bottom: 1rem;
+}
+
+.learn-more.highlight {
+    background-color: #ffaa5a;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+@keyframes fadeInUp {
+    from {
+    transform: translateY(20px);
+    opacity: 0;
+    }
+    to {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+  .learn-more.hero-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .learn-more.hero-section p {
+    font-size: 1rem;
+  }
+
+  .learn-more.section h3 {
+    font-size: 1.4rem;
+  }
+
+  .learn-more.section ul li {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+/* JOIN INITIATIVE ::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* JOIN INITIATIVE ::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* JOIN INITIATIVE ::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* JOIN INITIATIVE ::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* JOIN INITIATIVE ::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* JOIN INITIATIVE ::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+
+.join-initiative.svg-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('https://www.svgrepo.com/show/331632/artificial-intelligence.svg') no-repeat center center;
+    background-size: contain;
+    opacity: 0.08;
+    animation: moveBg 20s linear infinite alternate;
+}
+@keyframes moveBg {
+    0% { background-position: center top; }
+    100% { background-position: center bottom; }
+}
+.join-initiative.step {
+    display: none;
+}
+.join-initiative.step.active {
+    display: block;
+    animation: fadeIn 0.6s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.join-initiative.step-nav button {
+    margin: 0 5px;
+}
+.join-initiative.form-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
 }
