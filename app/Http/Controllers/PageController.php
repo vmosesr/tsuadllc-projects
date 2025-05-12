@@ -28,4 +28,14 @@ class PageController extends Controller
     {
         return view('tsuadllc.pages.top-navigation.contact-us');
     }
+
+    public function learnMore(): View
+    {
+        return view('tsuadllc.pages.contents.learn-more');
+    }
+
+    public function joinInitiative(): View
+    {
+        return view('tsuadllc.pages.contents.joining-initiative');
+    }
 }
