@@ -15,6 +15,11 @@ Route::get('/companies', [PageController::class, 'companies'])->name('companies'
 Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/contact-us', [PageController::class, 'contactUs'])->name('contact-us');
 
+// contents
+
+Route::get('/learn-more', [PageController::class, 'learnMore'])->name('learn-more');
+Route::get('/joining-initiative', [PageController::class, 'joinInitiative'])->name('joining-initiative');
+
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
