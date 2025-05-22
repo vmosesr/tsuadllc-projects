@@ -366,7 +366,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="_companies ethics-card zoom-in">
-                            <div class="ethics-card-body">
+                            <div class="_companies ethics-card-body">
                                 <div class="_companies ethics-icon">
                                     <i class="fas fa-handshake"></i>
                                 </div>
