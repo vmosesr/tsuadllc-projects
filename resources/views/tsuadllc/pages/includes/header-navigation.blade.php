@@ -30,13 +30,10 @@
 
         <header class="navigation-bar">
 
-            <!-- Desktop Navigation -->
             <div class="desktop-nav">
-                <!-- Top Navigation -->
                 <div class="top-nav">
                     <div class="container">
                         <div class="row align-items-center">
-                            <!-- Logo Section (Left) -->
                             <div class="col-md-3 logo-container">
                                 <div class="logo-icon">
                                     <i class="fas fa-building"></i>
@@ -44,7 +41,6 @@
                                 <div class="logo-text">ETHICS FRAMEWORK</div>
                             </div>
                             
-                            <!-- Center Menu Links -->
                             <div class="col-md-6">
                                 <div class="center-menu">
                                     <a href="{{ route('who-we-are') }}" class="nav-link">WHO WE ARE</a>
@@ -53,7 +49,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Search, Login, Register (Right) -->
                             <div class="col-md-3">
                                 <div class="search-login-container">
                                     <div class="search-container">
