@@ -26,6 +26,9 @@
     --dark: #333;
     --light: #ffffff;
     --primary-transparent: rgba(255, 170, 90, 0.1);
+    --primary-dark: #e6994d;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --border: rgba(255, 170, 90, 0.3);
 }
 
 .bg-primary-custom {
@@ -342,7 +345,6 @@ body{
     background-color: var(--primary);
 }
 
-/* Orange shape in hero */
 .who-we-are-hero:before {
     content: '';
     position: absolute;
@@ -356,13 +358,6 @@ body{
     animation: pulse 8s infinite alternate;
 }
 
-.who-we-are.btn:hover{
-    color: black;
-}
-
-/* actions ..................................................... */
-/* actions ..................................................... */
-/* actions ..................................................... */
 /* actions ..................................................... */
 /* actions ..................................................... */
 /* actions ..................................................... */
@@ -379,7 +374,6 @@ body{
     position: relative;
     color: #e0a035;
     font-weight: 600;
-    /* border-bottom: .5px solid #e0a035; */
 }
 
 .cards-container {
@@ -875,13 +869,11 @@ body{
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Left side positioning */
 .timeline-left {
     float: left;
     margin-right: 0;
 }
 
-/* Add arrow for left side items */
 .timeline-left:after {
     content: '';
     position: absolute;
@@ -894,13 +886,11 @@ body{
     box-shadow: 3px -3px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Right side positioning */
 .timeline-right {
     float: right;
     margin-left: 0;
 }
 
-/* Add arrow for right side items */
 .timeline-right:after {
     content: '';
     position: absolute;
@@ -1934,39 +1924,363 @@ a {
 
 
 
-.join-initiative.svg-bg {
-    position: fixed;
+.join.form-container {
+    margin: 20px;
+    background: var(--light);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px var(--shadow);
+    overflow: hidden;
+    position: relative;
+}
+
+.join.form-header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--light);
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.join.form-header::before {
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.join.form-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.join.form-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+
+.join.progress-container {
+    padding: 30px;
+    background: var(--light);
+}
+
+.join.progress-bar {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.join.progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--primary-transparent);
+    z-index: 1;
+    border-radius: 2px;
+}
+
+.join.progress-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 3px;
+    background: var(--primary);
+    z-index: 2;
+    transition: width 0.5s ease;
+    border-radius: 2px;
+}
+
+.join.step-indicator {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--light);
+    border: 3px solid var(--primary-transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--dark);
+    position: relative;
+    z-index: 3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.join.step-indicator.active {
+    background: var(--primary);
+    color: var(--light);
+    border-color: var(--primary);
+    transform: scale(1.1);
+}
+
+.join.step-indicator.completed {
+    background: var(--primary);
+    color: var(--light);
+    border-color: var(--primary);
+}
+
+.join.step-content {
+    min-height: 400px;
+    padding: 0 20px;
+}
+
+.join.step {
+    display: none;
+    animation: slideIn 0.5s ease;
+}
+
+.join.step.active {
+    display: block;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.join.form-group {
+    margin-bottom: 25px;
+}
+
+.join.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 1rem;
+}
+
+.join.form-control {
     width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url('https://www.svgrepo.com/show/331632/artificial-intelligence.svg') no-repeat center center;
-    background-size: contain;
-    opacity: 0.08;
-    animation: moveBg 20s linear infinite alternate;
+    padding: 15px 20px;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--light);
+    color: var(--dark);
 }
-@keyframes moveBg {
-    0% { background-position: center top; }
-    100% { background-position: center bottom; }
+
+.join.form-control:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-transparent);
+    transform: translateY(-1px);
 }
-.join-initiative.step {
+
+.join.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+    padding-right: 50px;
+}
+
+.join.radio-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.join.radio-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px 20px;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background: var(--light);
+    flex: 1;
+    min-width: 150px;
+}
+
+.join.radio-item:hover {
+    border-color: var(--primary);
+    background: var(--primary-transparent);
+}
+
+.join.radio-item.selected {
+    border-color: var(--primary);
+    background: var(--primary-transparent);
+}
+
+.join.radio-item input[type="radio"] {
+    margin-right: 10px;
+    accent-color: var(--primary);
+    transform: scale(1.2);
+}
+
+.join.confirmation-step {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.join.confirmation-icon {
+    font-size: 4rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    animation: bounce 1s ease infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+.join.confirmation-step h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.join.confirmation-step p {
+    font-size: 1.1rem;
+    color: var(--dark);
+    opacity: 0.8;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.join.step-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: var(--primary-transparent);
+    margin-top: 20px;
+}
+
+.join.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.join.btn-primary {
+    background: var(--primary);
+    color: var(--light);
+}
+
+.join.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 170, 90, 0.4);
+}
+
+.join.btn-secondary {
+    background: transparent;
+    color: var(--dark);
+    border: 2px solid var(--border);
+}
+
+.join.btn-secondary:hover {
+    background: var(--primary-transparent);
+    border-color: var(--primary);
+}
+
+.join.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.join.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 5px;
     display: none;
 }
-.join-initiative.step.active {
-    display: block;
-    animation: fadeIn 0.6s ease-in-out;
+
+.join.form-control.error {
+    border-color: #e74c3c;
 }
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 768px) {
+
+    .join.form-header {
+        padding: 30px 20px;
+    }
+
+    .join.form-header h1 {
+        font-size: 2rem;
+    }
+
+    .join.progress-container {
+        padding: 20px;
+    }
+
+    .join.step-indicator {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .join.radio-group {
+        flex-direction: column;
+    }
+
+    .join.radio-item {
+        min-width: 100%;
+    }
+
+    .join.step-navigation {
+        padding: 20px;
+    }
+
+    .join.btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
 }
-.join-initiative.step-nav button {
-    margin: 0 5px;
-}
-.join-initiative.form-section {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+
+@media (max-width: 480px) {
+    .join.form-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .join.step-indicator {
+        width: 35px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+
+    .join.confirmation-step {
+        padding: 30px 10px;
+    }
+
+    .join.confirmation-icon {
+        font-size: 3rem;
+    }
 }
