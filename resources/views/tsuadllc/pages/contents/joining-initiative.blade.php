@@ -3,92 +3,131 @@
 
     <main class="">
 
-        <div class="join-initiative svg-bg"></div>
+        <div class="join form-container">
 
-        <div class="join-initiative container py-5">
-            <div class="join-initiative form-section mx-auto" style="max-width: 800px;">
-                <h2 class="text-center mb-4">Join Our Responsible AI Initiative</h2>
-                <form id="joinForm">
-                
-                <!-- Step 1: Personal Information -->
-                <div class="join-initiative step active" id="step1">
-                    <div class="mb-3">
-                    <label for="fullName" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="fullName" required>
-                    </div>
-                    <div class="mb-3">
-                    <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="mb-3">
-                    <label for="country" class="form-label">Country</label>
-                    <input type="text" class="form-control" id="country" required>
-                    </div>
+            <div class="join form-header">
+                <h1><i class="fas fa-robot"></i> Join Our Initiative</h1>
+                <p>Be part of the global movement for responsible AI innovation</p>
+            </div>
+
+            <div class="join progress-container">
+                <div class="join progress-bar">
+                    <div class="join progress-line" id="progressLine"></div>
+                    <div class="join step-indicator active" data-step="1">1</div>
+                    <div class="join step-indicator" data-step="2">2</div>
+                    <div class="join step-indicator" data-step="3">3</div>
+                    <div class="join step-indicator" data-step="4">4</div>
                 </div>
 
-                <!-- Step 2: Interest Area -->
-                <div class="join-initiative step" id="step2">
-                    <div class="mb-3">
-                    <label for="interest" class="form-label">Area of Interest</label>
-                    <select class="join-initiative form-select" id="interest" required>
-                        <option selected disabled>Choose...</option>
-                        <option>Ethical AI Design</option>
-                        <option>Transparency & Explainability</option>
-                        <option>Privacy and Data Protection</option>
-                        <option>Bias Mitigation</option>
-                        <option>AI Policy and Legal</option>
-                        <option>Human-Centered AI</option>
-                    </select>
+                <form id="joinForm" class="join step-content">
+                    <div class="join step active" id="step1">
+                        <div class="join form-group">
+                            <label for="fullName" class="join form-label">
+                                <i class="fas fa-user"></i> Full Name
+                            </label>
+                            <input type="text" class="join form-control" id="fullName" required>
+                            <div class="join error-message" id="fullNameError">Please enter your full name</div>
+                        </div>
+                        <div class="join form-group">
+                            <label for="email" class="join form-label">
+                                <i class="fas fa-envelope"></i> Email Address
+                            </label>
+                            <input type="email" class="join form-control" id="email" required>
+                            <div class="join error-message" id="emailError">Please enter a valid email address</div>
+                        </div>
+                        <div class="join form-group">
+                            <label for="country" class="join form-label">
+                                <i class="fas fa-globe"></i> Country
+                            </label>
+                            <input type="text" class="join form-control" id="country" required>
+                            <div class="join error-message" id="countryError">Please enter your country</div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                    <label class="join-initiative join-initiative form-label">Are you joining as an individual or organization?</label>
-                    <div>
-                        <input class="join-initiative form-check-input me-2" type="radio" name="type" id="individual" value="Individual" checked>
-                        <label class="join-initiative form-check-label me-3" for="individual">Individual</label>
-                        <input class="join-initiative form-check-input me-2" type="radio" name="type" id="organization" value="Organization">
-                        <label class="join-initiative form-check-label" for="organization">Organization</label>
-                    </div>
-                    </div>
-                </div>
 
-                <!-- Step 3: Company / Project Info -->
-                <div class="join-initiative step" id="step3">
-                    <div id="orgFields" style="display:none;">
-                    <div class="mb-3">
-                        <label for="company" class="form-label">Company / Organization Name</label>
-                        <input type="text" class="form-control" id="company">
+                    <div class="join step" id="step2">
+                        <div class="join form-group">
+                            <label for="interest" class="join form-label">
+                                <i class="fas fa-lightbulb"></i> Area of Interest
+                            </label>
+                            <select class="join form-control form-select" id="interest" required>
+                                <option value="" disabled selected>Choose your area of interest...</option>
+                                <option value="ethical-ai">Ethical AI Design</option>
+                                <option value="transparency">Transparency & Explainability</option>
+                                <option value="privacy">Privacy and Data Protection</option>
+                                <option value="bias">Bias Mitigation</option>
+                                <option value="policy">AI Policy and Legal</option>
+                                <option value="human-centered">Human-Centered AI</option>
+                            </select>
+                            <div class="join error-message" id="interestError">Please select an area of interest</div>
+                        </div>
+                        <div class="join form-group">
+                            <label class="join form-label">
+                                <i class="fas fa-users"></i> Joining As
+                            </label>
+                            <div class="join radio-group">
+                                <div class="join radio-item selected" data-value="individual">
+                                    <input type="radio" name="type" id="individual" value="individual" checked>
+                                    <label for="individual">Individual</label>
+                                </div>
+                                <div class="join radio-item" data-value="organization">
+                                    <input type="radio" name="type" id="organization" value="organization">
+                                    <label for="organization">Organization</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="position" class="form-label">Your Role</label>
-                        <input type="text" class="form-control" id="position">
-                    </div>
-                    </div>
-                    <div id="individualFields">
-                    <div class="mb-3">
-                        <label for="project" class="form-label">Project Description</label>
-                        <textarea class="join-initiative form-control" id="project" rows="4" placeholder="Describe your idea or initiative that promotes responsible AI..."></textarea>
-                    </div>
-                    </div>
-                </div>
 
-                <!-- Step 4: Confirmation -->
-                <div class="join-initiative step" id="step4">
-                    <div class="text-center">
-                    <i class="fas fa-thumbs-up fa-3x text-success mb-3"></i>
-                    <h4>You're almost there!</h4>
-                    <p>Click Submit to complete your registration and join the global effort toward ethical and responsible AI innovation.</p>
+                    <div class="join step" id="step3">
+                        <div id="orgFields" style="display:none;">
+                            <div class="join form-group">
+                                <label for="company" class="join form-label">
+                                    <i class="fas fa-building"></i> Company / Organization Name
+                                </label>
+                                <input type="text" class="join form-control" id="company">
+                                <div class="join error-message" id="companyError">Please enter your organization name</div>
+                            </div>
+                            <div class="join form-group">
+                                <label for="position" class="join form-label">
+                                    <i class="fas fa-briefcase"></i> Your Role
+                                </label>
+                                <input type="text" class="join form-control" id="position">
+                                <div class="join error-message" id="positionError">Please enter your role</div>
+                            </div>
+                        </div>
+                        <div id="individualFields">
+                            <div class="join form-group">
+                                <label for="project" class="join form-label">
+                                    <i class="fas fa-project-diagram"></i> Project Description
+                                </label>
+                                <textarea class="join form-control" id="project" rows="6" 
+                                    placeholder="Describe your idea or initiative that promotes responsible AI..."></textarea>
+                                <div class="join error-message" id="projectError">Please describe your project</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Navigation -->
-                <div class="join-initiative step-nav d-flex justify-content-between mt-4">
-                    <button type="button" class="join-initiative btn btn-secondary" id="prevBtn" onclick="nextPrev(-1)">Back</button>
-                    <button type="button" class="join-initiative btn btn-primary" id="nextBtn" onclick="nextPrev(1)">Next</button>
-                </div>
-
+                    <div class="join step" id="step4">
+                        <div class="join confirmation-step">
+                            <div class="join confirmation-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>You're All Set!</h3>
+                            <p>Click Submit to complete your registration and join the global effort toward ethical and responsible AI innovation.</p>
+                        </div>
+                    </div>
                 </form>
+
+                <div class="join step-navigation">
+                    <button type="button" class="join btn btn-secondary" id="prevBtn" disabled>
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button type="button" class="join btn btn-primary" id="nextBtn">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
             </div>
-            </div>
+
+        </div>
 
     </main>
 
