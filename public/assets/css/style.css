@@ -131,7 +131,6 @@ body{
     display: none;
 }
 
-/* Custom dropdown styling */
 .dropdown-large {
     position: static !important;
 }
@@ -360,6 +359,7 @@ body{
 
 .who-we-are.btn a:hover{
     color: #333;
+    z-index: 1000;
 }
 
 /* actions ..................................................... */
@@ -1976,7 +1976,7 @@ a {
 }
 
 .join.progress-bar {
-    padding: 30px;
+    padding: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
