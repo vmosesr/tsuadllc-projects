@@ -21,9 +21,25 @@ Route::get('/learn-more', [PageController::class, 'learnMore'])->name('learn-mor
 Route::get('/joining-initiative', [PageController::class, 'joinInitiative'])->name('joining-initiative');
 
 
+
+// user
+
 Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
+    ->middleware(['auth', 'verified' , 'individual_user'])
     ->name('dashboard');
+
+
+// admin
+Route::view('admin/dashboard', 'admin.dashboard')
+    ->middleware(['auth', 'verified' , 'admin'])
+    ->name('admin.dashboard');
+
+
+// company
+Route::view('company/dashboard', 'company.dashboard')
+    ->middleware(['auth', 'verified' , 'company_user'])
+    ->name('company.dashboard');
+    
 
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
