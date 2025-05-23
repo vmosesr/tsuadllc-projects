@@ -357,11 +357,6 @@ body{
     animation: pulse 8s infinite alternate;
 }
 
-.who-we-are.btn a:hover{
-    color: #333;
-    z-index: 1000;
-}
-
 /* actions ..................................................... */
 /* actions ..................................................... */
 /* actions ..................................................... */
@@ -1100,20 +1095,17 @@ body{
         margin-left: 80px;
     }
     
-    /* Reset positioning for mobile */
     .timeline-left, .timeline-right {
         float: none;
         margin-left: 80px;
         margin-right: 0;
     }
     
-    /* Reset arrows for mobile */
     .timeline-left:after, .timeline-right:after {
         left: -12px;
         right: auto;
     }
     
-    /* Clear the float */
     .timeline-item:after {
         content: "";
         display: table;
@@ -1220,6 +1212,7 @@ body{
 }
 
 ._companies.hero-title {
+    font-weight: 100;
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
     position: relative;
@@ -1973,7 +1966,7 @@ a {
 .join.progress-container {
     padding: 30px;
     background: var(--light);
-}
+} 
 
 .join.progress-bar {
     padding: 50px;
