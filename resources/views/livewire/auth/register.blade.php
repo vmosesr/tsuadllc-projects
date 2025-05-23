@@ -150,7 +150,8 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         <div class="-login status-message" :status="session('status')" style="display: none;" id="sessionStatus"></div>
 
-        <form id="loginForm" class="-login login-form">
+        <form method="post" action="{{ route('register') }}" class="-login login-form">
+            @csrf
             <div class="-login form-group">
                 <label for="name" class="-login form-label">Name</label>
                 <input type="text" id="name" name="name" class="-login form-input" placeholder="Joe Moses" required autofocus autocomplete="name"/>
