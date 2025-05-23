@@ -320,30 +320,30 @@ document.addEventListener('DOMContentLoaded', () => {
 // LOGIN FORM :::::::::::::::::::::::::::::::::::::::::::::::::
 // LOGIN FORM :::::::::::::::::::::::::::::::::::::::::::::::::
 
-document.getElementById('loginForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+// document.getElementById('loginForm').addEventListener('submit', function(e) {
+//     e.preventDefault();
     
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const remember = document.getElementById('remember').checked;
+//     const email = document.getElementById('email').value;
+//     const password = document.getElementById('password').value;
+//     const remember = document.getElementById('remember').checked;
     
-    console.log('Login attempt:', { email, password, remember });
+//     console.log('Login attempt:', { email, password, remember });
     
-    const statusDiv = document.getElementById('sessionStatus');
-    statusDiv.textContent = 'Processing login...';
-    statusDiv.style.display = 'block';
+//     const statusDiv = document.getElementById('sessionStatus');
+//     statusDiv.textContent = 'Processing login...';
+//     statusDiv.style.display = 'block';
     
-    setTimeout(() => {
-        statusDiv.textContent = 'Login successful! Redirecting...';
-    }, 2000);
-});
+//     setTimeout(() => {
+//         statusDiv.textContent = 'Login successful! Redirecting...';
+//     }, 2000);
+// });
 
-document.querySelectorAll('.form-input').forEach(input => {
-    input.addEventListener('focus', function() {
-        this.parentElement.style.transform = 'scale(1.02)';
-    });
+// document.querySelectorAll('.form-input').forEach(input => {
+//     input.addEventListener('focus', function() {
+//         this.parentElement.style.transform = 'scale(1.02)';
+//     });
     
-    input.addEventListener('blur', function() {
-        this.parentElement.style.transform = 'scale(1)';
-    });
-});
+//     input.addEventListener('blur', function() {
+//         this.parentElement.style.transform = 'scale(1)';
+//     });
+// });
