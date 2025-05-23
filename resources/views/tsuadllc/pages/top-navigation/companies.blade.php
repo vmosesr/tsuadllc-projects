@@ -13,7 +13,7 @@
                         <h1 class="_companies hero-title animate__animated animate__fadeInUp">Welcome to <span>TSUAD LLC</span></h1>
                         <p class="_companies hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">A forward-thinking telecommunications and technology company with innovative solutions for the digital age.</p>
                         <div class="animate__animated animate__fadeInUp animate__delay-2s">
-                            <button class="_companies btn btn-primary">Explore Our Companies</button>
+                            <button class="_companies btn btn-primary"><a href="#companies" style="text-decoration: none; color: white;">Explore Our Companies</a></button>
                             <button class="_companies btn btn-outline">Learn More</button>
                         </div>
                     </div>
@@ -485,7 +485,7 @@
         </section>
 
         <!-- Our Companies Section -->
-        <section class="_companies section" style="background-color: #f8f9fa;">
+        <section class="_companies section" id="companies" style="background-color: #f8f9fa;">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-lg-8 mx-auto text-center">
