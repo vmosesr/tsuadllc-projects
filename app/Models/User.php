@@ -8,6 +8,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Str;
 
+use App\Enums\UserRole;
+
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
@@ -22,6 +24,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
     ];
 
     /**
@@ -44,7 +47,18 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'role' => UserRole::class
         ];
+    }
+
+    public function getDashboardRoute(): string
+    {
+        return match($this->role) {
+            UserRole::Admin => route('admin.dashboard'),
+            UserRole::CompanyUser => route('company.dashboard'),
+            UserRole::IndividualUser => route('dashboard'),
+            default => route('login'),
+        };
     }
 
     /**
