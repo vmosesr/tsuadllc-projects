@@ -179,7 +179,8 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         <div class="-login status-message" :status="session('status')" style="display: none;" id="sessionStatus"></div>
 
-        <form id="loginForm" class="-login login-form">
+        <form wire:submit="login" class="-login login-form">
+            @csrf
             <div class="-login form-group">
                 <label for="email" class="-login form-label">Email address</label>
                 <input type="email" id="email" name="email" class="-login form-input" placeholder="email@example.com" required autofocus autocomplete="email"/>
@@ -194,14 +195,15 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
             <div class="-login checkbox-container">
                 <input type="checkbox" id="remember" name="remember" class="-login checkbox" />
-                <label for="remember" class="-login checkbox-label">Remember me</label>
+                <label wire:model="remember" for="remember" class="-login checkbox-label">Remember me</label>
             </div>
 
             <button type="submit" class="-login login-button">Log in</button>
         </form>
-
-        <div class="-login signup-link">
-            Don't have an account? <a href="{{ route('register') }}">Sign up</a>
-        </div>
+        @if (Route::has('register'))
+            <div class="-login signup-link">
+                Don't have an account? <a href="{{ route('register') }}">Sign up</a>
+            </div>
+        @endif
     </div>
 </div>
